@@ -1,0 +1,14 @@
+.caseImages {
+    height: 500px;
+}
+
+.caseHeader {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    background-color: orange;
+}
+
+.caseText {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}

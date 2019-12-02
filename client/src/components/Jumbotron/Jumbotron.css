@@ -1,0 +1,8 @@
+.jumbotron {
+    text-align: center;
+    height: 600px;
+    background-image: url("./anthony-desk.jpg");
+    background-size: cover;
+    background-position: center center;
+    color: white;
+}

@@ -1,0 +1,16 @@
+.practiceHeader {
+    background-color: orange;
+    font-size: 28px;
+}
+
+.textFont {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cardTitle {
+    text-align: center;
+}
+
+.practiceImage {
+    height: 200px;
+}

@@ -1,0 +1,31 @@
+.footer {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    background-color: orange;
+    padding: 10px;
+}
+
+.footerSocial {
+    text-align: center;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 18px;
+    width: 60px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+    
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }

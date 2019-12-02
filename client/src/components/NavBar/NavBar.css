@@ -1,0 +1,25 @@
+.logo {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 3px double orange;
+}
+
+.navBorder {
+    border-style: ridge;
+    border-color: orange;
+}
+
+.navFont {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+.navContact {
+    border: 3px double orange;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a:hover, a:active {
+    font-size: 115%;
+}

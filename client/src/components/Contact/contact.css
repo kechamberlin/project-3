@@ -1,0 +1,17 @@
+.contact {
+    padding-right: 20%;
+    padding-left: 20%;
+}
+
+.contactHeader {
+    font-size: 28px;
+    background-color: orange;
+}
+
+.contactFont {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contactButton {
+    background-color: orange;
+}
