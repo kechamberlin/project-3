@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import Card from "react-bootstrap/Card";
-
+import API from "../../utils/API";
 
 function AssociateAttorneys() {
 
@@ -10,6 +10,7 @@ function AssociateAttorneys() {
         API.getAttorneys().then(dbAttorneys => {
             console.log(dbAttorneys);
             setAttorneys(dbAttorneys);
+            console.log("state" + attorneys)
         })
     }, []);
 

@@ -3,7 +3,7 @@ import NavBar from "./components/NavBar/NavBar";
 import Jumbotron from "./components/Jumbotron/Jumbotron";
 import Card from "./components/Card/Card";
 import AreasOfPractice from "./components/AreasOfPractice/AreasOfPractice";
-// import AssociateAttorneys from "./components/AssociateAttorneys/AssociateAttorneys";
+import AssociateAttorneys from "./components/AssociateAttorneys/AssociateAttorneys";
 import RecentCases from "./components/RecentCases/RecentCases";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
@@ -26,9 +26,9 @@ function App() {
             <br></br>
             <AreasOfPractice />
             <br></br>
-            {/* <AssociateAttorneys /> */}
-            <br></br>
             <RecentCases />
+            <br></br>
+            <AssociateAttorneys />
             <br></br>
             <Contact />
             <br></br>
