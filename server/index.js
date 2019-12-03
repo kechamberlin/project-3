@@ -3,14 +3,19 @@ const path = require("path");
 const PORT = process.env.PORT || 3001;
 const app = express();
 
+// *********************************** //
+// ========== My Code Below ========== //
+// *********************************** //
 
-
-// MY OWN CODE:
 const db = require("./models");
 
 const mongoose = require("mongoose");
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/populatedb", { useNewUrlParser: true });
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/attorneys", { useNewUrlParser: true });
+
+// *********************************** //
+//  --------- My Code Ends ---------  //
+// *********************************** //
 
 
 
@@ -24,6 +29,10 @@ if (process.env.NODE_ENV === "production") {
 
 
 
+// *********************************** //
+// ========== My code blow ==========  //
+// *********************************** //
+
 // MY OWN CODE:
 app.get("/associateattorney", (req, res) => {
   db.AssociateAttorney.find({})
@@ -35,9 +44,9 @@ app.get("/associateattorney", (req, res) => {
     });
 });
 
-
-
-
+// *********************************** //
+// ----------------------------------- //
+// *********************************** //
 
 
 

@@ -11,6 +11,6 @@ const AttorneySchema = new Schema({
     }
 });
 
-const AssociateAttorney = mongoose.model("Associate Attorney", AttorneySchema);
+const AssociateAttorney = mongoose.model("associateattorneys", AttorneySchema);
 
 module.exports = AssociateAttorney;
