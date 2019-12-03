@@ -1,6 +1,7 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Card from "react-bootstrap/Card";
 import API from "../../utils/API";
+import "./Associates.css";
 
 function AssociateAttorneys() {
 
@@ -16,18 +17,18 @@ function AssociateAttorneys() {
 
     return (
         <div>
-            {/* ??? How to input this information into a React-Bootstrap Card ??? */}
-                {attorneys.map(lawyer => {
-                    return (
-                        <Card>
-                            <Card.Img variant="top" src="" alt="generic picture" />
-                            <Card.Body>
-                                <Card.Title>{lawyer.name}</Card.Title>
-                                <Card.Text>
-                                    Practice={lawyer.practice}  
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
+            {attorneys.map(lawyer => {
+                return (
+                    <Card>
+                        <Card.Header className="header" as="h5"><strong>About Me</strong></Card.Header>
+                        <Card.Img variant="top" src="" alt="generic picture" />
+                        <Card.Body>
+                            <Card.Title>{lawyer.name}</Card.Title>
+                            <Card.Text>
+                                {lawyer.name} is an accomplished {lawyer.practice} attorney with several years of experience.
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
                     );
                 })}
         </div>
