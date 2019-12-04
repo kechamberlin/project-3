@@ -9,7 +9,9 @@ import "./RecentCases.css";
 function RecentCases() {
     return (
         <div>
-            <Card.Header as="h5" className="text-center caseHeader">Recent Cases</Card.Header>
+            <Card.Header as="h5" className="text-center caseHeader">
+                <strong>Recent Cases</strong>
+            </Card.Header>
 
             <br></br>
 

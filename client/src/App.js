@@ -8,6 +8,7 @@ import RecentCases from "./components/RecentCases/RecentCases";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import API from "./utils/API";
+import LawyerHeader from "./components/LawyerHeader/LawyerHeader";
 import "./style.css";
 
 function App() {
@@ -27,6 +28,8 @@ function App() {
             <AreasOfPractice />
             <br></br>
             <RecentCases />
+            <br></br>
+            <LawyerHeader />
             <br></br>
             <AssociateAttorneys />
             <br></br>

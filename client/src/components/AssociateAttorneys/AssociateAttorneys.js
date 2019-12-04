@@ -19,9 +19,23 @@ function AssociateAttorneys() {
             {attorneys.map(lawyer => {
                 return (
                     <div>
-                        <Card>
-                            <Card.Header className="header" as="h5"><strong>About Me</strong></Card.Header>
-                        </Card>
+                        <div>
+                            <>
+                            <Card bg="light" style={{ width: '18rem' }}>
+                                <Card.Header>Associate Lawyer</Card.Header>
+                                <Card.Img variant="top" src="" alt="generic picture" />
+                                <Card.Body>
+                                <Card.Title>{lawyer.name}</Card.Title>
+                                <Card.Text>
+                                    {lawyer.practice}
+                                </Card.Text>
+                                </Card.Body>
+                            </Card>
+                            <br />
+                        </>
+
+                        </div>
+                        
                         <Card>
                             <Card.Img variant="top" src="" alt="generic picture" />
                             <Card.Body>
@@ -31,6 +45,7 @@ function AssociateAttorneys() {
                                 </Card.Text>
                             </Card.Body>
                         </Card>
+                        
                     </div>
                     );
                 })}
