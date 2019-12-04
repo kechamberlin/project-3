@@ -1,0 +1,7 @@
+.generic-picture {
+    height: 300px;
+    width: 500px;
+    border-radius: 50%;
+    border: 3px solid orange;
+    margin: 10px;
+}

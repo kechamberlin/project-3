@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Card from "react-bootstrap/Card";
+import CardDeck from "react-bootstrap/CardDeck";
 import API from "../../utils/API";
+import Picture from "./generic-profile-picture.jpg";
 import "./Associates.css";
 
 function AssociateAttorneys() {
@@ -19,33 +21,20 @@ function AssociateAttorneys() {
             {attorneys.map(lawyer => {
                 return (
                     <div>
-                        <div>
-                            <>
-                            <Card bg="light" style={{ width: '18rem' }}>
-                                <Card.Header>Associate Lawyer</Card.Header>
-                                <Card.Img variant="top" src="" alt="generic picture" />
-                                <Card.Body>
-                                <Card.Title>{lawyer.name}</Card.Title>
-                                <Card.Text>
-                                    {lawyer.practice}
-                                </Card.Text>
-                                </Card.Body>
-                            </Card>
-                            <br />
-                        </>
+                        {/* {lawyer.name}
+                        {lawyer.practice} */}
 
-                        </div>
-                        
-                        <Card>
-                            <Card.Img variant="top" src="" alt="generic picture" />
+                        <Card className="text-center">
+                            <Card.Title>{lawyer.name}</Card.Title>
+                            <Card.Img className="generic-picture" variant="center" src={Picture} alt="generic picture" />
                             <Card.Body>
-                                <Card.Title>{lawyer.name}</Card.Title>
                                 <Card.Text>
                                     {lawyer.name} is an accomplished {lawyer.practice} attorney with several years of experience.
                                 </Card.Text>
                             </Card.Body>
                         </Card>
-                        
+
+                            <br></br>
                     </div>
                     );
                 })}

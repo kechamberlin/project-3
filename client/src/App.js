@@ -30,7 +30,6 @@ function App() {
             <RecentCases />
             <br></br>
             <LawyerHeader />
-            <br></br>
             <AssociateAttorneys />
             <br></br>
             <Contact />
