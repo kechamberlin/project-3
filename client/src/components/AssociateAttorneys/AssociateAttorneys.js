@@ -25,6 +25,46 @@ function AssociateAttorneys() {
                         {lawyer.practice} */}
 
                         <Card className="text-center">
+                                <Card.Body>
+                                    <Card.Title>{lawyer.name}</Card.Title>
+                                    <Card.Text>
+                                    <img className="portrait" src={Picture} alt="Portrait of Anthony" />
+                                    <p className="cardText">
+                                        {lawyer.name} is an accomplished {lawyer.practice} attorney with several years of experience.
+
+                                    </p>
+                                    <p className="cardText">
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                                    </p>
+                                    <p className="cardText">
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                                    </p>
+                                    </Card.Text>
+                                </Card.Body>
+                        </Card>
+                        <br></br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        {/* <Card className="text-center">
                             <Card.Title>{lawyer.name}</Card.Title>
                             <Card.Img className="generic-picture" variant="center" src={Picture} alt="generic picture" />
                             <Card.Body>
@@ -33,8 +73,7 @@ function AssociateAttorneys() {
                                 </Card.Text>
                             </Card.Body>
                         </Card>
-
-                            <br></br>
+                            <br></br> */}
                     </div>
                     );
                 })}
